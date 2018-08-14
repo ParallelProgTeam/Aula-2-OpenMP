@@ -20,10 +20,10 @@ int main(int argc, char *argv[])
     // Inicio da regiao paralela, a clausula num_threads solicita um determinado número de threads
     #pragma omp parallel num_threads(4)
     {
-        cout << omp_get_thread_num() << \n"; // funcao da biblioteca runtime, retorna o ID (rank) da thread
-        return 0;
+        cout << omp_get_thread_num() << "\n"; // funcao da biblioteca runtime, retorna o ID (rank) da thread
     }
     //Fim da regiao paralela
+    return 0;
 }
 ```
 [O que o compilador faz](./compilerOpenMP.png)
