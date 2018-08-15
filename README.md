@@ -165,6 +165,8 @@ int main ()
 }
 ```
 
+Problema dessa solução? [False sharing!](./falsesharing.pdf)
+
 Ambiente de dados em OpenMP:
 ```cpp
 void simple(int n, float *a, float *b)
