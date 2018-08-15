@@ -1,3 +1,4 @@
+<!-- TODO: Corretude.pdf, passar a formato README, mover exercicio para pasta separada, postar exercicios do Matson em pasta separada -->
 
 # Aulas da disciplina Laboratório de Introdução à Programação Paralela -- OpenMP
 ### Ementa: Práticas em laboratório para introdução aos conceitos básicos de programação paralela. Modelos e ambientes para programação paralela. Corretude da execução concorrente em sistemas de memória compartilhada. Técnicas de paralelização. Algoritmos paralelos. Avaliação de desempenho em computação paralela. 
@@ -49,6 +50,8 @@ $ ./output
 
 OpenMP segue um modelo multi-thread de memória compartilhada. As threads se comunicam de forma implícita compartilhando variáveis: uma thread escreve na variável e a outra lê. O acesso concorrente não protegido a essas variáveis causa condições de corrida. (A saída do programa depende da ordem de execução das threads)
 –- Uma solução é o uso de sincronização. Mas sincronização serializa a execução de seu código. Melhor: minimize a necessidade de sincronização. 
+
+[Veja o material sobre corretude na programação paralela](./corretude.pdf)
 
 ## Exercício: 
 ![integração numérica](./integracao.png)
